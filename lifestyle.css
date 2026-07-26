@@ -1,0 +1,149 @@
+/* STYLE SECTIONING TAGS */
+body {
+            
+            background-image: url('assets/lifebackground.jpg'); 
+            
+            
+            background-repeat: no-repeat; 
+            
+            
+            background-size: cover; 
+            
+            
+            background-position: center center; 
+            
+            
+            background-attachment:fixed; 
+            
+            
+            background-color: #cccccc; 
+        }
+/* STYLE NAV BAR */
+
+ul{
+  display: flex;
+  justify-content:center;
+  gap: 250px;
+   list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+  
+}
+
+li a{
+  text-decoration:none;
+  color: White;
+  font-size: 1.5em;
+  margin:0%;
+  
+}
+
+li a:hover{
+  color: #FFB480;
+}
+
+nav {
+  position: fixed; 
+  top: 20px;                     
+          left: 50%;            
+  transform: translateX(-50%);   
+     padding: 10px 30px;   
+  width: max-content;
+ 
+  border-radius: 50px;      
+  z-index: 1000;
+  
+
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px);          
+  -webkit-backdrop-filter: blur(12px);  
+  
+  border: 1px solid rgba(255, 255, 255, 0.25); 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+img {
+    height: 250px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Div cards */
+.right-pic, .left-pic {
+    display: flex;
+  max-width:900px;
+  padding-top: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+  margin: 0 auto;
+
+    
+}
+
+/* text */
+
+h1 {
+  text-align:center;
+  color: lightpink;
+}
+
+p {
+  color:blue;
+}
+
+h1 a{
+  
+  color: lightpink;
+  
+  
+  
+}
+
+h1 a:hover{
+  color: #FFB480;
+}
+
+.right-pic p  {
+  padding-top:55px;
+    text-align: left;
+    margin: 0;
+}
+
+.left-pic p{
+  padding-top:55px;
+    text-align: right;
+    margin: 0;
+}
+
+.last{
+  text-align:center;
+  padding:50px;
+  padding-left:40px;
+  padding-right:40px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+/* This was researched for the use of clamp() so we can fix the view on phones*/
+p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+}
+
+/* this was also found by research for mobile usage */
+@media (max-width: 768px) {
+    .right-pic, .left-pic {
+        flex-direction: row ;
+        text-align: center;
+        gap: 15px;
+    }
+
+  , .left-pic p{
+    text-align:right;
+    margin:0;
+  }
+    .right-pic p {
+        text-align: left;
+        margin: 0;
+    }
